@@ -1,3 +1,28 @@
-@import 'normalize.css';
+/* 
+* base - site wide base
+*/
+
+/* import the variables first */
+@import 'base/_variables';
+
+/* import the then mixins */
+@import 'base/_mixins';
+
+/* basic reset */
+@import 'base/_reset';
+
+/* element defaults */
 @import 'base/_global';
+
+/*
+* modules
+*/
+
+/* site wide buttons and button modifiers */
+@import 'modules/_btn';
+
+/* main splash screen */
 @import 'modules/_large-hero';
+
+/* wrapper to add padding to entire site */
+@import 'modules/_wrapper';

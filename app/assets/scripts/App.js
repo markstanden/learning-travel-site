@@ -1,3 +1,5 @@
 import '../styles/styles.css';
 
-console.log('hello, alteration, 2');
+if (module.hot) {
+    module.hot.accept();
+}

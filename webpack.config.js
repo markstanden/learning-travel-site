@@ -69,11 +69,12 @@ module.exports = {
           // Translates CSS into CommonJS
           'css-loader',
 
-          // Use postcss autoprefixer plugin to autoprefix the compiled sassy css.
+          // Use postcss autoprefixer plugin
+          // to autoprefix the compiled sassy css.
           {
             loader: 'postcss-loader',
             options: {
-              // Adds webkit and moz prefixes to out compliled css
+              // Adds webkit and moz prefixes to our compliled css
               plugins: () => [autoprefixer()],
             },
           },

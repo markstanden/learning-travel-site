@@ -71,7 +71,8 @@ module.exports = {
 
           // Use postcss autoprefixer plugin
           // to autoprefix the compiled sassy css.
-          // autoprefixer plugin is added to postcss.config.js
+          // autoprefixer plugin is added to
+          // postcss.config.js
           'postcss-loader',
 
           // Compiles Sass to regular CSS

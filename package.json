@@ -1,37 +1,37 @@
 {
-    "name": "learning-travel-site",
-    "version": "0.0.2",
-    "description": "Website to learn the basics of webpack",
-    "main": "/app/",
-    "scripts": {
-        "dev": "webpack-dev-server",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/markstanden/learning-travel-site.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/markstanden/learning-travel-site/issues"
-    },
-    "homepage": "https://github.com/markstanden/learning-travel-site#readme",
-    "dependencies": {
-        "lodash": "^4.17.19"
-    },
-    "devDependencies": {
-        "autoprefixer": "^9.8.4",
-        "css-loader": "^3.6.0",
-        "postcss-comment": "^2.0.0",
-        "postcss-import": "^12.0.1",
-        "postcss-loader": "^3.0.0",
-        "postcss-mixins": "^6.2.3",
-        "postcss-nested": "^4.2.3",
-        "postcss-simple-vars": "^5.0.2",
-        "style-loader": "^1.2.1",
-        "webpack": "^4.43.0",
-        "webpack-cli": "^3.3.12",
-        "webpack-dev-server": "^3.11.0"
-    }
+  "name": "learning-travel-site",
+  "version": "0.0.2",
+  "description": "Website to learn the basics of webpack",
+  "main": "/app/",
+  "prettier": "prettier-airbnb-config",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markstanden/learning-travel-site.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markstanden/learning-travel-site/issues"
+  },
+  "homepage": "https://github.com/markstanden/learning-travel-site#readme",
+  "dependencies": {
+    "lodash": "^4.17.19"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "css-loader": "^3.6.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.0.5",
+    "prettier-airbnb-config": "^1.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }

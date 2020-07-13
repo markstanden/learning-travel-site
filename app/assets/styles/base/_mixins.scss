@@ -1,32 +1,30 @@
 /* 
 *
-* Media Queries
+* General Use Mixins
 *
 */
 
-/* 
-* Note media queries perform most reliably
-* across all browsers in em, as shown here:
-* https://zellwk.com/blog/media-query-units/
+/** Creates content for collapsed elements
+    when child elements have been taken
+    out of the normal flow
 */
-
-/* 530px / 16 = 33.125em */
-@mixin atSmall {
-  @media only screen and (min-width: 33em) {
-    @content;
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
   }
 }
 
-/* 800px / 16 = 50em */
-@mixin atMedium {
-  @media only screen and (min-width: 50em) {
-    @content;
-  }
-}
-
-/* 1200px / 16 = 75em */
-@mixin atLarge {
-  @media only screen and (min-width: 75em) {
-    @content;
-  }
+/** Places a element in the centre of a
+    parent element.
+    Parent element must have position:relative set
+    otherwise this will be centered to the
+    first parent with this set.
+*/
+@mixin centerElement {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

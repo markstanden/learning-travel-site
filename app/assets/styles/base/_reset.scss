@@ -1,23 +1,39 @@
-html {
-    /* Sensible sizing of html elements */
-    box-sizing: border-box;
+/*
+* BASIC RESET
+*
+* Basic Reset of HTML elements
+* Based on what I have learnt from 
+* Jonas Schmedtmann's excellent advanced CSS course
+*/
 
-    /* (10px / 16px) so 1 rem equals 10px. */
-    font-size: 62.5%;
+html {
+  /* Sensible sizing of html elements
+  */
+  box-sizing: border-box;
+
+  /* (10px / 16px) so 1 rem equals 10px.
+     This allows easy sizing as required pixel
+     size can be converted easily by dividing by 10
+  */
+  font-size: 62.5%;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  /* I want to choose whether an element
+     has margin and padding, not the browser
+  */
+  margin: 0;
+  padding: 0;
 
-    /* Puts default font size back to normal
-    but 1 rem still equals 10px for easy
-    relative box sizing */
-    font-size: 1.6rem;
+  /* Puts default font size back to normal
+     but 1 rem still equals 10px for easy
+     relative box sizing
+  */
+  font-size: 1.6rem;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }

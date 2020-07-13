@@ -1,12 +1,16 @@
 /* 
-* base - site wide base
+* base - site wide base scss file
 */
 
 /* import the variables first */
 @import 'base/_variables';
+@import 'base/_theme';
 
 /* import the then mixins */
 @import 'base/_mixins';
+
+/* import media queries */
+@import 'base/_media-query';
 
 /* basic reset */
 @import 'base/_reset';
@@ -24,5 +28,5 @@
 /* main splash screen */
 @import 'modules/_large-hero';
 
-/* wrapper to add padding to entire site */
+/* utility wrapper to add padding to groups of elements */
 @import 'modules/_wrapper';

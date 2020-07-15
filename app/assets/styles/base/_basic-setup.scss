@@ -1,7 +1,7 @@
 /*
-* BASIC RESET
+* BASIC SETUP
 *
-* Basic Reset of HTML elements
+* Basic settings for sensible workflow
 * Based on what I have learnt from 
 * Jonas Schmedtmann's excellent advanced CSS course
 */
@@ -18,22 +18,16 @@ html {
   font-size: 62.5%;
 }
 
-* {
-  /* I want to choose whether an element
-     has margin and padding, not the browser
-  */
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
+body {
   /* Puts default font size back to normal
      but 1 rem still equals 10px for easy
      relative box sizing
   */
   font-size: 1.6rem;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }

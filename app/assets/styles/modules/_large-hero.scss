@@ -1,5 +1,10 @@
 .large-hero {
   position: relative;
+  border-bottom: 1rem solid $color-one;
+
+  &__image {
+    display: block;
+  }
 
   &__text-content {
     position: absolute;
@@ -12,13 +17,9 @@
 
   &__title {
     font-weight: 300;
-    color: $mainBlue;
+    color: $color-one;
     font-size: 2.9rem;
     margin: 0;
-
-    /*   @media only screen and (min-width: 33em) {
-            font-size: 7.7rem;
-        } */
 
     @include atSmall {
       font-size: 7.7rem;
@@ -27,7 +28,7 @@
 
   &__subtitle {
     font-weight: 300;
-    color: $mainBlue;
+    color: $color-one;
     font-size: 2.4rem;
     margin: 0;
 
@@ -40,10 +41,11 @@
     color: #fff;
     font-size: 1.76rem;
     font-weight: 100;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: $shadow;
     max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
+    padding: 2rem 0;
 
     @include atSmall {
       font-size: 3rem;

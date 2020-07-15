@@ -1,32 +1,44 @@
-/* 
-* base - site wide base scss file
-*/
+/* >>>>> base - site wide base scss file <<<<< */
+
+/* normalise - bring all browsers to a similar starting point */
+@import 'normalize-scss';
 
 /* import the variables first */
-@import 'base/_variables';
-@import 'base/_theme';
+@import 'base/variables';
+@import 'base/theme';
 
 /* import the then mixins */
-@import 'base/_mixins';
+@import 'base/mixins';
 
 /* import media queries */
-@import 'base/_media-query';
+@import 'base/media-query';
 
-/* basic reset */
-@import 'base/_reset';
+/* basic setup */
+@import 'base/basic-setup';
 
 /* element defaults */
-@import 'base/_global';
+@import 'base/global';
 
-/*
-* modules
-*/
+/* >>>>> modules <<<<< */
 
 /* site wide buttons and button modifiers */
-@import 'modules/_btn';
+@import 'modules/btn';
 
 /* main splash screen */
-@import 'modules/_large-hero';
+@import 'modules/large-hero';
+
+/* Headline text following the splash screen */
+@import 'modules/headline';
+
+/* two column layout */
+@import 'modules/row';
+
+/* a utility class that adds consistent
+gaps between different section of the page  */
+@import 'modules/page-section';
 
 /* utility wrapper to add padding to groups of elements */
-@import 'modules/_wrapper';
+@import 'modules/wrapper';
+
+/* wrapper for large blocks of generic text */
+@import 'modules/generic-content-container';

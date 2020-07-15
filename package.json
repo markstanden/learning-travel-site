@@ -23,7 +23,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.5",
+    "closure-webpack-plugin": "^2.3.0",
     "css-loader": "^3.6.0",
+    "google-closure-compiler": "^20200628.0.0",
+    "normalize-scss": "^7.0.1",
     "postcss-loader": "^3.0.0",
     "prettier": "^2.0.5",
     "prettier-airbnb-config": "^1.0.0",

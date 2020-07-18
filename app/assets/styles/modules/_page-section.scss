@@ -9,4 +9,26 @@
     background-color: $color-one;
     color: $white;
   }
+
+  &--no-b-padding-until-medium {
+    padding-bottom: 0;
+    @include atMedium {
+      padding-bottom: 7.2rem;
+    }
+  }
+
+  &--no-b-padding-until-large {
+    padding-bottom: 0;
+    @include atLarge {
+      padding-bottom: 7.2rem;
+    }
+  }
+
+  &--testimonials {
+    background-color: $color-three;
+    @include atMedium {
+      background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+      background-size: cover;
+    }
+  }
 }

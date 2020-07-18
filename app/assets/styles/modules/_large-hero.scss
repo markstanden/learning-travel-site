@@ -7,6 +7,7 @@
   }
 
   &__text-content {
+    padding-top: 10rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -40,12 +41,12 @@
   &__description {
     color: #fff;
     font-size: 1.76rem;
-    font-weight: 100;
+    font-weight: 300;
     text-shadow: $shadow;
-    max-width: 30rem;
+    max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 
     @include atSmall {
       font-size: 3rem;

@@ -1,0 +1,54 @@
+.site-header {
+  padding: 1rem 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  @include atMedium {
+    background-color: rgba($color-one, 0.3);
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-one;
+    padding: 1.3rem 2.9rem;
+
+    @include atMedium {
+      left: auto;
+      transform: translateX(0);
+      padding: 2.5rem 3.6rem;
+    }
+  }
+
+  &__menu-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: $white;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+
+    @include atMedium {
+      display: none;
+    }
+  }
+
+  &__btn-container {
+    float: right;
+  }
+
+  &__menu-content {
+    display: none;
+
+    @include atMedium {
+      display: block;
+    }
+
+    &--is-visible {
+      display: block;
+    }
+  }
+}

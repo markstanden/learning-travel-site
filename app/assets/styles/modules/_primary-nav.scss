@@ -1,0 +1,23 @@
+.primary-nav {
+  &--pull-right {
+    float: right;
+  }
+
+  ul {
+    margin: 0;
+    padding: 1.2rem 0;
+    @include clearfix;
+  }
+
+  li {
+    list-style: none;
+    float: left;
+    padding-right: 2rem;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    font-weight: 400;
+  }
+}

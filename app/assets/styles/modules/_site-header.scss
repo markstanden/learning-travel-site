@@ -3,6 +3,11 @@
   position: absolute;
   width: 100%;
   z-index: 2;
+  transition: background-color 0.3s ease-out;
+
+  &--is-expanded {
+    background-color: rgba($color-one, 0.7);
+  }
 
   @include atMedium {
     background-color: rgba($color-one, 0.3);
@@ -30,6 +35,7 @@
     position: absolute;
     top: 1rem;
     right: 3rem;
+    z-index: 5;
 
     @include atMedium {
       display: none;
@@ -37,18 +43,32 @@
   }
 
   &__btn-container {
-    float: right;
+    @include atMedium {
+      float: right;
+    }
   }
 
   &__menu-content {
-    display: none;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
+    position: relative;
+    z-index: -10;
+
+    padding-top: 10rem;
+    text-align: center;
 
     @include atMedium {
-      display: block;
+      opacity: 1;
+      z-index: 1;
+      padding-top: 0;
+      transform: scale(1);
     }
 
     &--is-visible {
-      display: block;
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
     }
   }
 }

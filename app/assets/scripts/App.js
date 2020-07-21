@@ -10,6 +10,12 @@ import MobileMenu from './modules/MobileMenu.js';
 const mobileMenu = new MobileMenu();
 
 /*-------------------------------------------------------------------------------*/
+/* FEATURES SECTION - REVEAL ON SCROLL                                                                  */
+/*-------------------------------------------------------------------------------*/
+import RevealOnScroll from './modules/RevealOnScroll.js';
+const revealOnScroll = new RevealOnScroll();
+
+/*-------------------------------------------------------------------------------*/
 /* WEBPACK DEV SERVER INJECTOR                                                   */
 /*-------------------------------------------------------------------------------*/
 if (module.hot) {

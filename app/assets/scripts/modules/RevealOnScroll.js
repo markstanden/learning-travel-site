@@ -22,13 +22,17 @@ class RevealOnScroll {
   }
 
   calculateIfScrolledTo(el) {
-    console.log('element was calculated');
-    let scrollPercent = (el.getBoundingClientRect().y / window.innerHeight) * 100;
-    if (scrollPercent < 75) {
-      el.classList.add('reveal-item--is-visible');
-      el.isRevealed = true;
-      if (el.isLastItem) {
-        window.removeEventListener('scroll', this.scrollThrottle);
+    if (window.scrollY + window.innerHeight > el.offsetTop) {
+      console.log('element was calculated');
+      let scrollPercent = (el.getBoundingClientRect().y / window.innerHeight) * 100;
+      if (scrollPercent < 75) {
+        el.classList.add('reveal-item--is-visible');
+        el.isRevealed = true;
+        if (el.isLastItem) {
+          //makes sure the all items are revealed before completely removing listener.
+          //this.itemsToReveal.forEach(el => el.classList.add('reveal-item--is-visible'));
+          window.removeEventListener('scroll', this.scrollThrottle);
+        }
       }
     }
   }

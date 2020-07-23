@@ -10,7 +10,13 @@ import MobileMenu from './modules/MobileMenu.js';
 const mobileMenu = new MobileMenu();
 
 /*-------------------------------------------------------------------------------*/
-/* FEATURES SECTION - REVEAL ON SCROLL                                                                  */
+/* STICKY HEADER FOR DESKTOP VERSION                                             */
+/*-------------------------------------------------------------------------------*/
+import StickyHeader from './modules/StickyHeader.js';
+const stickyHeader = new StickyHeader();
+
+/*-------------------------------------------------------------------------------*/
+/* FEATURES SECTION - REVEAL ON SCROLL                                           */
 /*-------------------------------------------------------------------------------*/
 import RevealOnScroll from './modules/RevealOnScroll.js';
 new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);

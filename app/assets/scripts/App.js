@@ -13,7 +13,8 @@ const mobileMenu = new MobileMenu();
 /* FEATURES SECTION - REVEAL ON SCROLL                                                                  */
 /*-------------------------------------------------------------------------------*/
 import RevealOnScroll from './modules/RevealOnScroll.js';
-const revealOnScroll = new RevealOnScroll();
+new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);
+new RevealOnScroll(document.querySelectorAll('.testimonial'), 60);
 
 /*-------------------------------------------------------------------------------*/
 /* WEBPACK DEV SERVER INJECTOR                                                   */

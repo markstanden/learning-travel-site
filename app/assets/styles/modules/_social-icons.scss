@@ -1,0 +1,29 @@
+.social-icons {
+  text-align: center;
+
+  &__icon {
+    background-color: $color-two;
+    display: inline-block;
+    width: 33%;
+    height: 7.2rem;
+    margin: 1rem 1rem 1rem 1rem;
+    position: relative;
+
+    @include atSmall {
+      width: 7.2rem;
+      margin: 0 0.5rem 0.5rem 0.5rem;
+    }
+
+    &:hover {
+      background-color: $color-three;
+    }
+
+    img {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

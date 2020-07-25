@@ -3,10 +3,9 @@
 /*-------------------------------------------------------------------------------*/
 import '../styles/styles.scss';
 
-/*-------------------------------------------------------------------------------*/
-/* Lazy Loading Images                                                           */
-/*-------------------------------------------------------------------------------*/
-
+/*------------------------------------------------------------------------------*/
+/* Lazy Loading Images                                                          */
+/*------------------------------------------------------------------------------*/
 import 'lazysizes';
 
 /*-------------------------------------------------------------------------------*/
@@ -31,9 +30,9 @@ new RevealOnScroll(document.querySelectorAll('.testimonial'), 60);
 /*-------------------------------------------------------------------------------*/
 /* MODAL - GET IN TOUCH                                                          */
 /*-------------------------------------------------------------------------------*/
-/* import Modal from './modules/Modal.js';
-new Modal(); */
 let modal;
+/* Creates an event listener so that the modal.js file is downloaded only
+when a click is made, so reduce data usage, and speed up site load time */
 document.querySelectorAll('.open-modal').forEach(el => {
   el.addEventListener('click', e => {
     e.preventDefault();

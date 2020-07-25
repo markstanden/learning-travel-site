@@ -7,7 +7,7 @@
 
 /* needed for the output property */
 const path = require('path');
-const buildOutputDir = 'docs';
+const buildOutputDir = 'dist';
 
 /* From Brad Schiff's course */
 const currentTask = process.env.npm_lifecycle_event;
